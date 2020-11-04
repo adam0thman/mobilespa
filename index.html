@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA-ice Up!</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+        integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+
+    <div id="fullpage">
+        <section class="section s1">
+            <div class="slide">
+                <h1>First <a href="#section3" rel="noopener noreferrer">Go to 3</a></h1>
+            </div>
+            <div class="slide">
+                <h1>Pricing here</h1>
+            </div>
+            <div class="slide">
+                <h1>Review Here</h1>
+            </div>
+        </section>
+        <section class="section s2">
+            <h1>Second Sectiion</h1>
+        </section>
+        <section class="section s3">
+            <h1>Ketiga</h1>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+        integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+        crossorigin="anonymous"></script>
+    <script>
+        new fullpage('#fullpage', {
+            licenseKey: '7ACEBFCC-48874A67-9B3BA461-BE0394FF',
+            autoSrolling: true,
+            scrollHorizontally: true,
+            navigation: true,
+            anchors: ['section1', 'section2', 'section3'],
+            navigationTooltips: ['Home', 'About', 'Three'],
+            controlArrows: false,
+            slidesNavigation: true,
+
+            //Accessibility
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: true,
+
+        })
+    </script>
+</body>
+
+</html>
